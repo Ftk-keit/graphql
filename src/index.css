@@ -1,0 +1,28 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body{
+  display: flex;
+  flex-direction: column;
+ 
+  height: 100vh;
+  justify-content: center;
+  
+}
+
+@keyframes borderAnimation {
+  0% {
+      border-color: #050338;
+  }
+  50% {
+      border-color: #504da7; /* Couleur de bordure intermédiaire */
+  }
+  100% {
+      border-color: #22205c;
+  }
+}
+
+.border-animate {
+  animation: borderAnimation 3s infinite; /* Ajustez la durée et la répétition */
+}
